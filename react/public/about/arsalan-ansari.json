@@ -1,8 +1,8 @@
 {
   "name": "Arsalan Ansari",
   "title": "Full Stack Developer",
-  "profilePicture": "public/img/profile/person.png",
-  "projectCategories": ["All", "Next JS", "React JS", "Node JS"],
+  "profilePicture": "public/img/profile/person.jpg",
+  "projectCategories": ["All", "React JS", "Next JS"],
   "articleCategories": ["About", "Resume", "Portfolio", "Blog", "Contact"],
   "contactDetails": {
     "dob": "23-Aug-1998",
@@ -20,137 +20,241 @@
   "social": {
     "github": "https://github.com/arsalanansariofficial",
     "website": "https://arsalanansariofficial.github.io/arsalanansariofficial",
-    "discord": "https://discordapp.com/users/302050872383242240/1264955363510452377",
+    "discord": "https://discordapp.com/users/1343911893852491869",
     "email": "mailto:theansaricompany@gmail.com?subject=Mail%20To%20Arsalan%20Ansari",
     "resume": "public/about/arsalan-ansari_resume.pdf"
   },
   "projects": [
     {
-      "category": "Next JS",
-      "title": "E-Commerce Application",
-      "image": "public/img/projects/project-1.png",
-      "href": "https://github.com/arsalanansariofficial/apps/tree/main/e-commerce"
+      "category": "All",
+      "title": "Stats Preview Component",
+      "image": "public/img/projects/stats-preview.jpeg",
+      "href": "https://arsalanansariofficial.github.io/stats-preview-component"
+    },
+    {
+      "category": "All",
+      "title": "Results Summary Component",
+      "image": "public/img/projects/results-summary.jpeg",
+      "href": "https://arsalanansariofficial.github.io/results-summary-component"
+    },
+    {
+      "category": "All",
+      "title": "Article Preview Component",
+      "image": "public/img/projects/article-preview.jpeg",
+      "href": "https://arsalanansariofficial.github.io/article-preview-component"
+    },
+    {
+      "category": "All",
+      "title": "Base Apparel Coming Soon Page",
+      "image": "public/img/projects/base-apparel-coming-soon.jpeg",
+      "href": "https://arsalanansariofficial.github.io/base-apparel-coming-soon-page"
+    },
+    {
+      "category": "All",
+      "title": "Expenses Chart Component",
+      "image": "public/img/projects/expenses-chart.jpeg",
+      "href": "https://arsalanansariofficial.github.io/expenses-chart-component"
+    },
+    {
+      "category": "All",
+      "title": "Interactive Card Details Form",
+      "image": "public/img/projects/interactive-card-details.jpeg",
+      "href": "https://arsalanansariofficial.github.io/interactive-card-details-form"
+    },
+    {
+      "category": "All",
+      "title": "Interactive Rating Component",
+      "image": "public/img/projects/interactive-rating.jpeg",
+      "href": "https://arsalanansariofficial.github.io/interactive-rating-component"
+    },
+    {
+      "category": "All",
+      "title": "QR Component",
+      "image": "public/img/projects/qr.jpeg",
+      "href": "https://arsalanansariofficial.github.io/qr-component"
+    },
+    {
+      "category": "All",
+      "title": "Profile Card Component",
+      "image": "public/img/projects/profile-card.jpeg",
+      "href": "https://arsalanansariofficial.github.io/profile-card-component"
+    },
+    {
+      "category": "All",
+      "title": "Product Preview Card Component",
+      "image": "public/img/projects/product-preview.jpeg",
+      "href": "https://arsalanansariofficial.github.io/product-preview-card-component"
+    },
+    {
+      "category": "All",
+      "title": "Ping Single Column Coming Soon Page",
+      "image": "public/img/projects/ping-single-column-coming-soon.jpeg",
+      "href": "https://arsalanansariofficial.github.io/ping-single-column-coming-soon-page"
+    },
+    {
+      "category": "All",
+      "title": "Order Summary Component",
+      "image": "public/img/projects/order-summary.jpeg",
+      "href": "https://arsalanansariofficial.github.io/order-summary-component"
+    },
+    {
+      "category": "All",
+      "title": "Notifications Page",
+      "image": "public/img/projects/notifications.jpeg",
+      "href": "https://arsalanansariofficial.github.io/notifications-page"
+    },
+    {
+      "category": "All",
+      "title": "NFT Preview Card Component",
+      "image": "public/img/projects/nft-preview.jpeg",
+      "href": "https://arsalanansariofficial.github.io/nft-preview-card-component"
+    },
+    {
+      "category": "All",
+      "title": "Newsletter Signup Form",
+      "image": "public/img/projects/newsletter-signup.jpeg",
+      "href": "https://arsalanansariofficial.github.io/newsletter-signup-form"
+    },
+    {
+      "category": "All",
+      "title": "News Home Page",
+      "image": "public/img/projects/news-home.jpeg",
+      "href": "https://arsalanansariofficial.github.io/news-home-page"
+    },
+    {
+      "category": "All",
+      "title": "Multistep Form",
+      "image": "public/img/projects/multi-step.jpeg",
+      "href": "https://arsalanansariofficial.github.io/multi-step-form"
+    },
+    {
+      "category": "All",
+      "title": "Launch Countdown Timer",
+      "image": "public/img/projects/launch-countdown-timer.jpeg",
+      "href": "https://arsalanansariofficial.github.io/launch-countdown-timer"
+    },
+    {
+      "category": "All",
+      "title": "Interactive Rating Component",
+      "image": "public/img/projects/interactive-rating.jpeg",
+      "href": "https://arsalanansariofficial.github.io/interactive-rating-component"
+    },
+    {
+      "category": "All",
+      "title": "Advice Generator App",
+      "image": "public/img/projects/advice-generator.jpeg",
+      "href": "https://arsalanansariofficial.github.io/advice-generator-app"
+    },
+    {
+      "category": "All",
+      "title": "Age Calculator App",
+      "image": "public/img/projects/age-calculator.jpeg",
+      "href": "https://arsalanansariofficial.github.io/age-calculator-app"
+    },
+    {
+      "category": "All",
+      "title": "3 Column Preview Card Component",
+      "image": "public/img/projects/3-column-preview-card.jpeg",
+      "href": "https://arsalanansariofficial.github.io/3-column-preview-card-component"
     },
     {
       "category": "React JS",
       "title": "Consultation Application",
-      "image": "public/img/projects/project-2.png",
-      "href": "https://github.com/arsalanansariofficial/apps/tree/main/consultation-app"
+      "image": "public/img/projects/consultation.jpeg",
+      "href": "https://github.com/arsalanansariofficial/consultation-app"
     },
     {
-      "category": "Node JS",
+      "category": "Next JS",
       "title": "Weather Application",
-      "image": "public/img/projects/project-3.png",
-      "href": "https://github.com/arsalanansariofficial/next-js/tree/main/weather"
+      "image": "public/img/projects/weather.png",
+      "href": "https://github.com/arsalanansariofficial/weather-app"
     },
     {
       "title": "Tic Tac Toe",
       "category": "React JS",
-      "image": "public/img/projects/project-4.png",
-      "href": "https://github.com/arsalanansariofficial/react-js/tree/main/tic-tac-toe"
+      "image": "public/img/projects/tic-tac-toe.jpeg",
+      "href": "https://github.com/arsalanansariofficial/tic-tac-toe"
     },
     {
       "title": "React Quiz",
       "category": "React JS",
-      "image": "public/img/projects/project-5.png",
-      "href": "https://github.com/arsalanansariofficial/react-js/tree/main/react-quiz"
+      "image": "public/img/projects/react-quiz.jpeg",
+      "href": "https://github.com/arsalanansariofficial/react-quiz"
     },
     {
       "category": "React JS",
       "title": "Task Manager",
-      "image": "public/img/projects/project-6.png",
-      "href": "https://github.com/arsalanansariofficial/apps/tree/main/task-manager"
+      "image": "public/img/projects/task-manager.jpeg",
+      "href": "https://github.com/arsalanansariofficial/main/task-manager"
     },
     {
       "category": "React JS",
       "title": "Expense Tracker",
-      "image": "public/img/projects/project-7.png",
-      "href": "https://github.com/arsalanansariofficial/react-js/tree/main/expense-tracker"
-    },
-    {
-      "category": "Next JS",
-      "title": "Social Application",
-      "image": "public/img/projects/project-8.png",
-      "href": "https://github.com/arsalanansariofficial/apps/tree/main/social"
+      "image": "public/img/projects/expense-tracker.jpeg",
+      "href": "https://github.com/arsalanansariofficial/expense-tracker"
     },
     {
       "category": "React JS",
       "title": "Project Manager",
-      "image": "public/img/projects/project-9.png",
-      "href": "https://github.com/arsalanansariofficial/react-js/tree/main/project-manager"
+      "image": "public/img/projects/project-manager.jpeg",
+      "href": "https://github.com/arsalanansariofficial/project-manager"
     }
   ],
   "blogs": [
     {
-      "date": "2024-07-05",
-      "category": "Next JS",
-      "title": "E-Commerce Application",
-      "image": "public/img/blogs/blog-1.png",
-      "href": "https://github.com/arsalanansariofficial/apps/tree/main/e-commerce",
-      "description": "🎉 Project based on Next.js just a rather simple E-commerce application."
-    },
-    {
       "date": "2021-11-10",
       "category": "React JS",
       "title": "Consultation Application",
-      "image": "public/img/blogs/blog-2.png",
-      "href": "https://github.com/arsalanansariofficial/apps/tree/main/consultation-app",
+      "image": "public/img/projects/consultation.jpeg",
+      "href": "https://github.com/arsalanansariofficial/consultation-app",
       "description": "🎉 Project based on React.js & Typescript, it lets users to consult with the doctors available."
     },
     {
       "date": "2022-05-03",
       "category": "Next JS",
       "title": "Weather Application",
-      "image": "public/img/blogs/blog-3.png",
-      "href": "https://github.com/arsalanansariofficial/next-js/tree/main/weather",
+      "image": "public/img/projects/weather.png",
+      "href": "https://github.com/arsalanansariofficial/weather-app",
       "description": "🎉 Project based on Next.js, Tailwind CSS & Shad CN, just a rather simple weather application."
     },
     {
       "date": "2022-09-05",
       "category": "React JS",
       "title": "Tic Tac Toe",
-      "image": "public/img/blogs/blog-4.png",
-      "href": "https://github.com/arsalanansariofficial/react-js/tree/main/tic-tac-toe",
+      "image": "public/img/projects/tic-tac-toe.jpeg",
+      "href": "https://github.com/arsalanansariofficial/tic-tac-toe",
       "description": "🎉Project based on React.js & Typescript, lets users play Tic Tac Toe."
     },
     {
       "date": "2023-01-10",
       "category": "React JS",
       "title": "React Quiz",
-      "image": "public/img/blogs/blog-5.png",
-      "href": "https://github.com/arsalanansariofficial/react-js/tree/main/react-quiz",
+      "image": "public/img/projects/react-quiz.jpeg",
+      "href": "https://github.com/arsalanansariofficial/react-quiz",
       "description": "🎉Project based on React.js, just a basic quiz application."
     },
     {
       "date": "2022-07-05",
       "category": "React JS",
       "title": "Task Manager",
-      "image": "public/img/blogs/blog-1.png",
-      "href": "https://github.com/arsalanansariofficial/apps/tree/main/task-manager",
+      "image": "public/img/projects/task-manager.jpeg",
+      "href": "https://github.com/arsalanansariofficial/task-manager",
       "description": "🎉Project based on React.js, it allows users to create tasks."
     },
     {
       "date": "2022-11-07",
       "category": "React JS",
       "title": "Expense Tracker",
-      "image": "public/img/blogs/blog-2.png",
-      "href": "https://github.com/arsalanansariofficial/react-js/tree/main/expense-tracker",
+      "image": "public/img/projects/expense-tracker.jpeg",
+      "href": "https://github.com/arsalanansariofficial/expense-tracker",
       "description": "🎉Project based on React.js, just a simple application works in a local environment which can track expense information based on the date in a specific year."
-    },
-    {
-      "date": "2024-05-03",
-      "category": "Next JS",
-      "title": "Social Application",
-      "image": "public/img/blogs/blog-6.png",
-      "href": "https://github.com/arsalanansariofficial/apps/tree/main/social",
-      "description": "🎉Project based on Next.js, it provides an interface for the user to upload images."
     },
     {
       "date": "2022-11-15",
       "category": "React JS",
       "title": "Project Manager",
-      "image": "public/img/blogs/blog-3.png",
-      "href": "https://github.com/arsalanansariofficial/react-js/tree/main/project-manager",
+      "image": "public/img/projects/project-manager.jpeg",
+      "href": "https://github.com/arsalanansariofficial/project-manager",
       "description": "🎉Project based on React.js, just a simple project manager application."
     }
   ],
@@ -279,6 +383,11 @@
       }
     ],
     "experience": [
+      {
+        "duration": "2024",
+        "institution": "Full Stack Developer",
+        "description": "🚀 I worked as Full Stack Developer, where I created a brand identity website for an automible company."
+      },
       {
         "duration": "2022",
         "institution": "Full Stack Developer",

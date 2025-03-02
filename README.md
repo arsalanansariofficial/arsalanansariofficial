@@ -1,208 +1,31 @@
-<img src="https://komarev.com/ghpvc/?username=arsalanansariofficial&color=red"/>
+# 👋, Arsalan Ansari Here <img src="https://komarev.com/ghpvc/?username=arsalanansariofficial&color=red"/>
 
-# 👋, Arsalan Ansari Here
+**JavaScript Enthusiast building with Next JS.**
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=arsalanansariofficial&theme=github_dark_dimmed&hide_border=false&layout=compact)
+## 💻 Tech Stack
 
-![](https://github-readme-stats.vercel.app/api?username=arsalanansariofficial&show_icons=true&theme=github_dark_dimmed)
+<img src="./public/img/icons/vs-code.png" width="35" height="35" alt="Visual Studio Code" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/git.png" width="35" height="35" alt="Git" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/html.png" width="30" height="30" alt="HTML5" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/css.png" width="30" height="30" alt="CSS3" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/sass.png" width="35" height="35" alt="Sass" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/bootstrap.png" width="35" height="35" alt="Bootsrap" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/tailwind.svg" width="35" height="35" alt="Tailwind" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/javascript.png" width="33" height="33" alt="Javascript" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/typescript.png" width="33" height="33" alt="Typescript" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/reactjs.png" width="35" height="35" alt="React JS" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/nextjs.png" width="35" height="35" alt="Next JS" />
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=arsalanansariofficial&theme=github_dark_dimmed&hide_border=false)
+## ⌚ Timeline
 
-### 💻 Tech Stack
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arsalanansariofficial&theme=github_dark_dimmed&hide_border=false&layout=compact" alt="Github Timeline"/>
 
-<img src="public/img/icons/html.png" width="30" height="30" alt="HTML5" />&nbsp;&nbsp;<img src="public/img/icons/css.png" width="30" height="30" alt="CSS3" />&nbsp;&nbsp;<img src="public/img/icons/bootstrap.png" width="35" height="35" alt="Bootstrap" />&nbsp;&nbsp;<img src="public/img/icons/tailwind.svg" width="35" height="35" alt="Tailwind" />&nbsp;&nbsp;<img src="public/img/icons/sass.png" width="35" height="35" alt="SASS" />&nbsp;&nbsp;<img src="public/img/icons/javascript.png" width="33" height="33" alt="Javascript" />&nbsp;&nbsp;<img src="public/img/icons/typescript.png" width="35" height="35" alt="Typescript" />&nbsp;&nbsp;<img src="public/img/icons/nodejs.png" width="35" height="35" alt="Node JS" />&nbsp;&nbsp;<img src="public/img/icons/reactjs.png" width="35" height="35" alt="React JS" />&nbsp;&nbsp;<img src="public/img/icons/nextjs.png" width="35" height="35" alt="Next JS" />&nbsp;&nbsp;<img src="public/img/icons/git.png" width="35" height="35" alt="Git" />&nbsp;&nbsp;<img src="public/img/icons/vs-code.png" width="35" height="35" alt="Visual Studio Code" />
+## ✈️ Contributons
 
-### 💻 Developed Projects
+<img src='https://github-readme-streak-stats.herokuapp.com/?user=arsalanansariofficial&theme=github_dark_dimmed&hide_border=false' alt="Github Contributions">
 
-1. ## Chat Application
+## ✨ Statistics
 
-   ### Project based on Node.js, it provides real time server for multiple users to chat with each other.
+<img src="https://github-readme-stats.vercel.app/api?username=arsalanansariofficial&show_icons=true&theme=github_dark_dimmed" alt="Github Statistics">
 
-   Screens <br>
-   <img src="./public/projects/chat-app/1.jpeg" alt="Home Page" />
-   <img src="./public/projects/chat-app/2.jpeg" alt="Home Page" />
-   <img src="./public/projects/chat-app/3.jpeg" alt="Home Page" />
+## 🧑‍💻 Contact Me
 
-2. ## Expense Tracker
+- ### Website - [Arsalan Ansari](https://arsalanansariofficial.github.io/arsalanansariofficial)
 
-   ### Project based on React.js, just a simple application works in a local environment which can track expense information based on the date in a specific year.
+- ### Discord - [Arsalan Ansari](https://discordapp.com/users/1343911893852491869)
 
-   Screens <br>
-   <img src="./public/projects/expense-tracker/1.jpeg" alt="Home Page" />
-   <img src="./public/projects/expense-tracker/2.jpeg" alt="Home Page" />
-   <img src="./public/projects/expense-tracker/3.jpeg" alt="Home Page" />
+- ### Linked In - [@arsalanansariofficial](https://www.linkedin.com/in/arsalanansariofficial/)
 
-3. ## File Sorter
+- ### Email - [theansaricompany@gmail.com](mailto:theansaricompany@gmail.com?subject=Mail%20To%20Arsalan%20Ansari)
 
-   ### Project based on Node.js, it sorts and groups the files inside a folder according to the date and month of file in which it was created or taken.
-
-   Screens <br>
-   <img src="./public/projects/file-sorter/1.jpeg" alt="Home Page" />
-
-4. ## Tic Tac Toe
-
-   ### Project based on React.js & Typescript, lets users play Tic Tac Toe.
-
-   Screens <br>
-   <img src="./public/projects/tic-tac-toe/1.jpeg" alt="Home Page" />
-   <img src="./public/projects/tic-tac-toe/2.jpeg" alt="Home Page" />
-   <img src="./public/projects/tic-tac-toe/3.jpeg" alt="Home Page" />
-
-5. ## Task Manger App
-
-   ### Project based on React.js, it allows users to create tasks.
-
-   Screens <br>
-   <img src="./public/projects/task-manager/1.jpeg" alt="Home Page" />
-   <img src="./public/projects/task-manager/2.jpeg" alt="Home Page" />
-   <img src="./public/projects/task-manager/3.jpeg" alt="Home Page" />
-   <img src="./public/projects/task-manager/4.jpeg" alt="Home Page" />
-
-6. ## Quiz App
-
-   ### Project based on React.js, just a basic quiz application.
-
-   Screens <br>
-   <img src="./public/projects/quiz-app/1.jpeg" alt="Home Page" />
-   <img src="./public/projects/quiz-app/2.jpeg" alt="Home Page" />
-
-7. ## Movie App
-
-   ### Project based on React.js, it allow users to find latest movie release.
-
-   Screens <br>
-   <img src="./public/projects/movie-app/1.jpeg" alt="Home Page" />
-
-8. ## Food Pantry
-
-   ### Project based on React.js, a simple cart application which lets you add food displayed in the list to the shopping cart.
-
-   Screens <br>
-   <img src="./public/projects/food-pantry/1.jpeg" alt="Home Page" />
-   <img src="./public/projects/food-pantry/2.jpeg" alt="Home Page" />
-   <img src="./public/projects/food-pantry/3.jpeg" alt="Home Page" />
-
-9. ## Consultation App
-
-   ### Project based on React.js & Typescript, it lets users to consult with the doctors available.
-
-   Screens <br>
-   <img src="./public/projects/consultation-app/1.jpeg" alt="Home Page" />
-   <img src="./public/projects/consultation-app/2.jpeg" alt="Home Page" />
-   <img src="./public/projects/consultation-app/3.jpeg" alt="Home Page" />
-   <img src="./public/projects/consultation-app/4.jpeg" alt="Home Page" />
-   <img src="./public/projects/consultation-app/5.jpeg" alt="Home Page" />
-
-10. ## [Age Calculator](https://arsalanansariofficial.github.io/age-calculator-page/)
-
-    Screens <br>
-    <img src="./public/projects/age-calculator/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/age-calculator/2.jpeg" alt="Home Page" />
-
-11. ## [Article Preview](https://arsalanansariofficial.github.io/article-preview-page/)
-
-    Screens <br>
-    <img src="./public/projects/article-preview/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/article-preview/2.jpeg" alt="Home Page" />
-
-12. ## [Base Home Page](https://arsalanansariofficial.github.io/base-home-page/)
-
-    Screens <br>
-    <img src="./public/projects/base-home-page/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/base-home-page/2.jpeg" alt="Home Page" />
-
-13. ## [NFT Card](https://arsalanansariofficial.github.io/card-page/)
-
-    Screens <br>
-    <img src="./public/projects/nft-card/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/nft-card/2.jpeg" alt="Home Page" />
-
-14. ## [Expense Chart](https://arsalanansariofficial.github.io/expense-chart-page/)
-
-    Screens <br>
-    <img src="./public/projects/expense-chart/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/expense-chart/2.jpeg" alt="Home Page" />
-
-15. ## [Interactive Card Details](https://arsalanansariofficial.github.io/interactive-card-details-page/)
-
-    Screens <br>
-    <img src="./public/projects/interactive-card-details-page/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/interactive-card-details-page/2.jpeg" alt="Home Page" />
-
-16. ## [Multistep Form](https://arsalanansariofficial.github.io/multip-step-form-page/)
-
-    Screens <br>
-    <img src="./public/projects/multi-step-form/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/multi-step-form/2.jpeg" alt="Home Page" />
-
-17. ## [Newsletter](https://arsalanansariofficial.github.io/newsletter-page/)
-
-    Screens <br>
-    <img src="./public/projects/newsletter/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/newsletter/2.jpeg" alt="Home Page" />
-
-18. ## [Notifications Page](https://arsalanansariofficial.github.io/notifications-page/)
-
-    Screens <br>
-    <img src="./public/projects/notifications-page/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/notifications-page/2.jpeg" alt="Home Page" />
-
-19. ## [Order Summary Page](https://arsalanansariofficial.github.io/order-summary-page/)
-
-    Screens <br>
-    <img src="./public/projects/order-summary-page/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/order-summary-page/2.jpeg" alt="Home Page" />
-
-20. ## [Ping Home Page](https://arsalanansariofficial.github.io/ping-home-page/)
-
-    Screens <br>
-    <img src="./public/projects/ping-home-page/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/ping-home-page/2.jpeg" alt="Home Page" />
-
-21. ## [Product Page](https://arsalanansariofficial.github.io/product-page/)
-
-    Screens <br>
-    <img src="./public/projects/product-page/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/product-page/2.jpeg" alt="Home Page" />
-
-22. ## [Profile Card Page](https://arsalanansariofficial.github.io/profile-card-page/)
-
-    Screens <br>
-    <img src="./public/projects/profile-card/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/profile-card/2.jpeg" alt="Home Page" />
-
-23. ## [Qr Page](https://arsalanansariofficial.github.io/qr-page/)
-
-    Screens <br>
-    <img src="./public/projects/qr-page/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/qr-page/2.jpeg" alt="Home Page" />
-
-24. ## [Rating Page](https://arsalanansariofficial.github.io/rating-page/)
-
-    Screens <br>
-    <img src="./public/projects/rating-page/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/rating-page/2.jpeg" alt="Home Page" />
-
-25. ## [Recipe Page](https://arsalanansariofficial.github.io/recipe-page/)
-
-    Screens <br>
-    <img src="./public/projects/recipe-page/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/recipe-page/2.jpeg" alt="Home Page" />
-
-26. ## [Stats Preview Page](https://arsalanansariofficial.github.io/stats-preview-card-page/)
-
-    Screens <br>
-    <img src="./public/projects/stats-preview-page/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/stats-preview-page/2.jpeg" alt="Home Page" />
-
-27. ## [Summary Page](https://arsalanansariofficial.github.io/summary-page/)
-
-    Screens <br>
-    <img src="./public/projects/summary-page/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/summary-page/2.jpeg" alt="Home Page" />
-
-28. ## [3 Column Preview Page](https://arsalanansariofficial.github.io/three-column-preview-page/)
-
-    Screens <br>
-    <img src="./public/projects/3-column-layout/1.jpeg" alt="Home Page" />
-    <img src="./public/projects/3-column-layout/2.jpeg" alt="Home Page" />
+- ### Frontend Mentor - [@arsalanansariofficial](https://www.frontendmentor.io/profile/arsalanansariofficial)

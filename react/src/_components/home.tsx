@@ -25,7 +25,7 @@ export default function Home() {
               height={100}
               alt={person.name}
               src={person.profilePicture}
-              className="profile-box_img"
+              className="profile-box_img rounded-2xl"
             />
           </figure>
           <div className="info_content space-y-2 self-center">
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
         <div
           className={cn(
-            `sidebar_more-info space-y-4 lg:static lg:h-auto lg:w-auto lg:scale-100`,
+            `sidebar_more-info space-y-4 lg:static lg:h-auto lg:w-auto lg:scale-100 lg:block`,
             !isAccordianOpen && 'hidden'
           )}
         >
@@ -461,7 +461,7 @@ export default function Home() {
                           <img
                             alt={blog.title}
                             src={blog.image}
-                            className="image-box_img absolute inset-0 aspect-video h-full w-full"
+                            className="image-box_img absolute inset-0"
                           />
                         </figure>
                         <div className="item_content space-y-2 rounded-b-xl p-4">

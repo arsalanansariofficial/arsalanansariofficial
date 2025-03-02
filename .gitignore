@@ -11,12 +11,12 @@
 ####################
 # * testing
 ####################
-/coverage
+coverage
 
 ####################
 # * production
 ####################
-/build
+build
 
 ####################
 # * typescript
@@ -27,8 +27,8 @@ next-env.d.ts
 ####################
 # * next.js
 ####################
-/out/
-/.next/
+out
+.next
 
 ####################
 # * misc
@@ -52,9 +52,9 @@ yarn-error.log*
 ####################
 # * dependencies
 ####################
-/.pnp
+.pnp
 .pnp.js
-/node_modules
+node_modules
 .yarn/install-state.gz
 
 ####################
