@@ -1,31 +1,40 @@
-# 👋, Arsalan Ansari Here <img src="https://komarev.com/ghpvc/?username=arsalanansariofficial&color=red"/>
+### 👋 Hi, I'm Arsalan Ansari!
 
-**JavaScript Enthusiast building with Next JS.**
+I'm a Fullstack Developer specializing in **Next.JS** to build fast, responsive, and scalable user interfaces.
 
-## 💻 Tech Stack
+### 🚀 What I Do
 
-<img src="./public/img/icons/vs-code.png" width="35" height="35" alt="Visual Studio Code" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/git.png" width="35" height="35" alt="Git" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/html.png" width="30" height="30" alt="HTML5" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/css.png" width="30" height="30" alt="CSS3" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/sass.png" width="35" height="35" alt="Sass" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/bootstrap.png" width="35" height="35" alt="Bootsrap" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/tailwind.svg" width="35" height="35" alt="Tailwind" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/javascript.png" width="33" height="33" alt="Javascript" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/typescript.png" width="33" height="33" alt="Typescript" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/reactjs.png" width="35" height="35" alt="React JS" />&nbsp;&nbsp;&nbsp;<img src="./public/img/icons/nextjs.png" width="35" height="35" alt="Next JS" />
+- 💡 Write components in a functional paradigm.
+- ⚡ Create components that can be rendered on the server.
+- 🎨 Beautify applications using Tailwind, ShadCN.
+- 🔍 Filter and improve design decisions and code reusability.
 
-## ⌚ Timeline
+### 🛠️ What I Enjoy
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arsalanansariofficial&theme=github_dark_dimmed&hide_border=false&layout=compact" alt="Github Timeline"/>
+- 🔥 Clean and developer-friendly code.
+- 🎯 Building robust applications with excellent accessibility.
+- 🚀 Enhancing user experience by providing the best feedback for their inputs.
 
-## ✈️ Contributons
+When I’m not coding, I enjoy playing games.
 
-<img src='https://github-readme-streak-stats.herokuapp.com/?user=arsalanansariofficial&theme=github_dark_dimmed&hide_border=false' alt="Github Contributions">
+### 💻 Tech Stack
 
-## ✨ Statistics
+<img src="./public/img/icons/vs-code.png" width="25" height="25" alt="Visual Studio Code" />&nbsp;&nbsp;
+<img src="./public/img/icons/git.png" width="25" height="25" alt="Git" />&nbsp;&nbsp;
+<img src="./public/img/icons/html.png" width="30" height="30" alt="HTML5" />&nbsp;&nbsp;
+<img src="./public/img/icons/css.png" width="30" height="30" alt="CSS3" />&nbsp;&nbsp;
+<img src="./public/img/icons/sass.png" width="25" height="25" alt="Sass" />&nbsp;&nbsp;
+<img src="./public/img/icons/bootstrap.png" width="25" height="25" alt="Bootstrap" />&nbsp;&nbsp;
+<img src="./public/img/icons/tailwind.svg" width="25" height="25" alt="Tailwind" />&nbsp;&nbsp;
+<img src="./public/img/icons/javascript.png" width="25" height="25" alt="JavaScript" />&nbsp;&nbsp;
+<img src="./public/img/icons/typescript.png" width="25" height="25" alt="TypeScript" />&nbsp;&nbsp;
+<img src="./public/img/icons/reactjs.png" width="25" height="25" alt="React JS" />&nbsp;&nbsp;
+<img src="./public/img/icons/nextjs.png" width="25" height="25" alt="Next JS" />
 
-<img src="https://github-readme-stats.vercel.app/api?username=arsalanansariofficial&show_icons=true&theme=github_dark_dimmed" alt="Github Statistics">
+### 📬 Contact Me
 
-## 🧑‍💻 Contact Me
-
-- ### Website - [Arsalan Ansari](https://arsalanansariofficial.github.io/arsalanansariofficial)
-
-- ### Discord - [Arsalan Ansari](https://discordapp.com/users/1343911893852491869)
-
-- ### Linked In - [@arsalanansariofficial](https://www.linkedin.com/in/arsalanansariofficial/)
-
-- ### Email - [theansaricompany@gmail.com](mailto:theansaricompany@gmail.com?subject=Mail%20To%20Arsalan%20Ansari)
-
-- ### Frontend Mentor - [@arsalanansariofficial](https://www.frontendmentor.io/profile/arsalanansariofficial)
+[<img src="public/img/icons/website.png" alt="Website" width="25" height="25">](https://arsalanansariofficial.github.io/arsalanansariofficial)&nbsp;&nbsp;
+[<img src="public/img/icons/discord.png" alt="Discord" width="25" height="25">](https://discordapp.com/users/1343911893852491869)&nbsp;&nbsp;
+[<img src="public/img/icons/linkedin.png" alt="LinkedIn" width="25" height="25">](https://www.linkedin.com/in/arsalanansariofficial/)&nbsp;&nbsp;
+[<img src="public/img/icons/email.png" alt="Email" width="25" height="25">](mailto:theansaricompany@gmail.com?subject=Mail%20To%20Arsalan%20Ansari)&nbsp;&nbsp;
+[<img src="public/img/icons/frontendmentor.png" alt="Frontend Mentor" width="25" height="25">](https://www.frontendmentor.io/profile/arsalanansariofficial)
