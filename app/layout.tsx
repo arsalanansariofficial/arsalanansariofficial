@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
 
+import { Toaster } from '@/components/ui/sonner';
+
 import '@/app/globals.css';
 
 type Props = Readonly<{ children: React.ReactNode }>;
@@ -23,6 +25,7 @@ export default function RootLayout({ children }: Props) {
         className={`${inter.variable} ${playfair.variable} relative top-24 flex min-h-screen flex-col space-y-4 px-8 antialiased`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );
