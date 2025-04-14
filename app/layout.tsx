@@ -1,8 +1,15 @@
 import type { Metadata } from 'next';
+import { Inter, Playfair_Display } from 'next/font/google';
 
 import '@/app/globals.css';
 
 type Props = Readonly<{ children: React.ReactNode }>;
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-serif'
+});
 
 export const metadata: Metadata = {
   title: 'Arsalan Ansari',
@@ -12,7 +19,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col antialiased">{children}</body>
+      <body
+        className={`${inter.variable} ${playfair.variable} relative top-24 flex min-h-screen flex-col space-y-4 px-8 antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
