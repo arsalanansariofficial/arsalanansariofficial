@@ -3,9 +3,6 @@
 import { z } from 'zod';
 import { toast } from 'sonner';
 import { FormEvent, useState } from 'react';
-import * as Icon from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -45,34 +42,12 @@ export default function Page() {
   }
 
   return (
-    <main className="">
+    <main className="grow">
       <section className="container mx-auto max-w-3xl space-y-8">
         <header className="space-y-8">
           <h1 className="decoration-border/75 font-serif text-3xl font-bold underline decoration-2 underline-offset-8">
             Let&apos;s talk about your project
           </h1>
-          <ul className="flex gap-2">
-            <li>
-              <a href="https://github.com/arsalanansariofficial/arsalanansariofficial">
-                <FontAwesomeIcon icon={Icon.faGithub} size="lg" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/arsalanansariofficial/">
-                <FontAwesomeIcon icon={Icon.faLinkedin} size="lg" />
-              </a>
-            </li>
-            <li>
-              <a href="https://wa.link/dnq2t8">
-                <FontAwesomeIcon icon={Icon.faWhatsapp} size="lg" />
-              </a>
-            </li>
-            <li>
-              <a href="mailto:theansaricompany@gmail.com?subject=Mail%20To%20Arsalan%20Ansari">
-                <FontAwesomeIcon icon={faEnvelope} size="lg" />
-              </a>
-            </li>
-          </ul>
         </header>
         <main>
           <form className="space-y-4" onSubmit={handleSend}>
