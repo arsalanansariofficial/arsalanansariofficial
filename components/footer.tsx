@@ -1,6 +1,8 @@
 import * as Brands from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
+
+import data from '@/data.json';
 
 export default function Footer() {
   return (
@@ -8,34 +10,52 @@ export default function Footer() {
       <ul className="mx-auto flex max-w-fit gap-2 sm:order-1 sm:mx-0 sm:max-w-none">
         <li className="h-4 w-4">
           <a
+            title="Email"
+            target="_blank"
+            href={data.social.email}
             className="text-muted-foreground hover:text-foreground"
-            href="mailto:theansaricompany@gmail.com?subject=Mail%20To%20Arsalan%20Ansari"
           >
             <FontAwesomeIcon icon={faEnvelope} size="sm" />
           </a>
         </li>
         <li className="h-4 w-4">
           <a
+            title="GitHub"
+            target="_blank"
+            href={data.social.gitHub}
             className="text-muted-foreground hover:text-foreground"
-            href="https://github.com/arsalanansariofficial/arsalanansariofficial"
           >
             <FontAwesomeIcon icon={Brands.faGithub} size="sm" />
           </a>
         </li>
         <li className="h-4 w-4">
           <a
+            title="LinkedIn"
+            target="_blank"
+            href={data.social.linkedIn}
             className="text-muted-foreground hover:text-foreground"
-            href="https://www.linkedin.com/in/arsalanansariofficial/"
           >
             <FontAwesomeIcon icon={Brands.faLinkedin} size="sm" />
           </a>
         </li>
         <li className="h-4 w-4">
           <a
-            href="https://wa.link/dnq2t8"
+            target="_blank"
+            title="WhatsApp"
+            href={data.social.whatApp}
             className="text-muted-foreground hover:text-foreground"
           >
             <FontAwesomeIcon icon={Brands.faWhatsapp} size="sm" />
+          </a>
+        </li>
+        <li className="h-3 w-3">
+          <a
+            target="_blank"
+            title="WhatsApp"
+            href={data.social.resume}
+            className="text-muted-foreground hover:text-foreground"
+          >
+            <FontAwesomeIcon icon={faFile} size="sm" />
           </a>
         </li>
       </ul>
