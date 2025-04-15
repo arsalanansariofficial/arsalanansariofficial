@@ -40,7 +40,7 @@ export default async function Page({ params }: Props) {
               priority
               src={post.image}
               alt="Post Image"
-              className="aspect-video rounded-lg grayscale"
+              className="aspect-video rounded-lg"
             />
           </div>
         </header>
