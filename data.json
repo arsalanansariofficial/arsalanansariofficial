@@ -1,4 +1,12 @@
 {
+  "profile": "https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/images/author/arsalan-ansari.jpeg",
+  "social": {
+    "whatApp": "https://wa.link/dnq2t8",
+    "linkedIn": "https://www.linkedin.com/in/arsalanansariofficial/",
+    "gitHub": "https://github.com/arsalanansariofficial/arsalanansariofficial",
+    "email": "mailto:theansaricompany@gmail.com?subject=Mail%20To%20Arsalan%20Ansari",
+    "resume": "https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/documents/arsalan-ansari_resume.pdf"
+  },
   "posts": [
     {
       "slug": "about-me",
