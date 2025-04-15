@@ -1,6 +1,6 @@
 import * as Brands from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 
 import data from '@/data.json';
 
@@ -46,16 +46,6 @@ export default function Footer() {
             className="text-muted-foreground hover:text-foreground"
           >
             <FontAwesomeIcon icon={Brands.faWhatsapp} size="sm" />
-          </a>
-        </li>
-        <li className="h-3 w-3">
-          <a
-            target="_blank"
-            title="WhatsApp"
-            href={data.social.resume}
-            className="text-muted-foreground hover:text-foreground"
-          >
-            <FontAwesomeIcon icon={faFile} size="sm" />
           </a>
         </li>
       </ul>
