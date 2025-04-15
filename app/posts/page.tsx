@@ -19,7 +19,7 @@ export default function Page() {
   }
 
   return (
-    <main className="container mx-auto max-w-3xl grow">
+    <main className="container mx-auto max-w-3xl grow px-8">
       <section className="space-y-4">
         <header className="space-y-4">
           <h1 className="decoration-border/75 font-serif text-3xl font-bold underline decoration-2 underline-offset-8">

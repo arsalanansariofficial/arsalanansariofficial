@@ -24,7 +24,7 @@ export default async function Page({ params }: Props) {
   );
 
   return (
-    <main>
+    <main className="px-8">
       <section className="container mx-auto max-w-3xl space-y-4">
         <header className="space-y-2">
           <Link

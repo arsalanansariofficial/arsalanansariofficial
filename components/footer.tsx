@@ -6,7 +6,7 @@ import data from '@/data.json';
 
 export default function Footer() {
   return (
-    <footer className="container mx-auto my-8 max-w-3xl space-y-4 sm:flex sm:items-center sm:justify-between sm:gap-2 sm:space-y-0">
+    <footer className="container mx-auto max-w-3xl space-y-4 p-8 sm:flex sm:items-center sm:justify-between sm:gap-2 sm:space-y-0">
       <ul className="mx-auto flex max-w-fit gap-2 sm:order-1 sm:mx-0 sm:max-w-none">
         <li className="h-4 w-4">
           <a
