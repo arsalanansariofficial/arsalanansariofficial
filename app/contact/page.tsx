@@ -42,7 +42,7 @@ export default function Page() {
   }
 
   return (
-    <main className="grow">
+    <main className="grow px-8">
       <section className="container mx-auto max-w-3xl space-y-8">
         <header className="space-y-8">
           <h1 className="decoration-border/75 font-serif text-3xl font-bold underline decoration-2 underline-offset-8">

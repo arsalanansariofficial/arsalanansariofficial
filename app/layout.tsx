@@ -25,7 +25,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${playfair.variable} relative top-24 flex min-h-screen flex-col px-8 antialiased`}
+        className={`${inter.variable} ${playfair.variable} relative top-24 flex min-h-screen flex-col antialiased`}
       >
         <ThemeProvider enableSystem attribute="class" defaultTheme="system">
           <Header />

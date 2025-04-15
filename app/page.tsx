@@ -10,7 +10,7 @@ export default function Home() {
   const projects = data.projects.slice(0, 5);
 
   return (
-    <main className="container mx-auto max-w-3xl grow space-y-8">
+    <main className="container mx-auto max-w-3xl grow space-y-8 px-8">
       <section className="gap-8 space-y-8 sm:flex sm:items-center sm:space-y-0">
         <header className="relative h-60 max-w-min min-w-44 sm:order-1 sm:max-w-none">
           <Image
