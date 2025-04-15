@@ -12,15 +12,14 @@ export default function Home() {
   return (
     <main className="container mx-auto max-w-3xl grow space-y-8 px-8">
       <section className="gap-8 space-y-8 sm:flex sm:items-center sm:space-y-0">
-        <header className="relative h-60 max-w-min min-w-44 sm:order-1 sm:max-w-none">
-          <Image
-            fill
-            priority
-            src={data.profile}
-            alt="Arsalan Ansari"
-            className="rounded-lg grayscale"
-          />
-        </header>
+        <Image
+          priority
+          width={175}
+          height={175}
+          src={data.profile}
+          alt="Arsalan Ansari"
+          className="w-44 rounded-lg grayscale sm:order-1"
+        />
         <main className="space-y-4">
           <h1 className="font-serif text-3xl font-bold">I&apos;m Arsalan.</h1>
           <p className="text-muted-foreground font-light">
