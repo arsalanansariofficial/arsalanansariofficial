@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
 
+import Footer from '@/components/footer';
 import { Toaster } from '@/components/ui/sonner';
 
 import '@/app/globals.css';
@@ -22,9 +23,10 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfair.variable} relative top-24 flex min-h-screen flex-col space-y-4 px-8 antialiased`}
+        className={`${inter.variable} ${playfair.variable} relative top-24 flex min-h-screen flex-col px-8 antialiased`}
       >
         {children}
+        <Footer />
         <Toaster />
       </body>
     </html>
