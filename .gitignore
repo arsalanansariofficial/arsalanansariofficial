@@ -28,8 +28,8 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env
-.env*
+# env files
+.env
 
 # vercel
 .vercel
@@ -37,3 +37,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# database
+db
+*.db
+
+# ide files
+.idea
+.vscode
+.VSCodeCounter
+
+# public
+public
