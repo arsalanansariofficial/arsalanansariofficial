@@ -1,26 +1,22 @@
 'use client';
 
-import { z } from 'zod';
-import { toast } from 'sonner';
 import { FormEvent, useState } from 'react';
+import { toast } from 'sonner';
+import { z } from 'zod';
 
-import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
 const schema = z.object({
-  name: z.string().min(1, { message: 'Name is required.' }),
   email: z.string().email({ message: 'Enter a valid email.' }),
-  message: z.string().min(10, { message: 'Should be atleast 10 characters' })
+  message: z.string().min(10, { message: 'Should be atleast 10 characters' }),
+  name: z.string().min(1, { message: 'Name is required.' })
 });
 
 export default function Page() {
   const [state, setState] = useState<{
-    errors: {
-      name?: string[];
-      email?: string[];
-      message?: string[];
-    };
+    errors: { name?: string[]; email?: string[]; message?: string[] };
   } | null>(null);
 
   function handleSend(event: FormEvent<HTMLFormElement>) {
@@ -28,54 +24,54 @@ export default function Page() {
     const formData = new FormData(event.target as HTMLFormElement);
 
     const result = schema.safeParse({
-      name: formData.get('name'),
       email: formData.get('email'),
-      message: formData.get('message')
+      message: formData.get('message'),
+      name: formData.get('name')
     });
 
-    if (result.error) {
+    if (result.error) 
       return setState({ errors: result.error.flatten().fieldErrors });
-    }
+    
 
     setState(null);
     toast.success('We have received your request.');
   }
 
   return (
-    <main className="container mx-auto max-w-3xl grow px-8">
-      <section className="space-y-8">
-        <header className="space-y-8">
-          <h1 className="decoration-border/75 font-serif text-3xl font-bold underline decoration-2 underline-offset-8">
+    <main className='container mx-auto max-w-3xl grow px-8'>
+      <section className='space-y-8'>
+        <header className='space-y-8'>
+          <h1 className='decoration-border/75 font-serif text-3xl font-bold underline decoration-2 underline-offset-8'>
             Let&apos;s talk about your project
           </h1>
         </header>
         <main>
-          <form className="space-y-4" onSubmit={handleSend}>
-            <div className="space-y-1">
-              <Input type="text" name="name" placeholder="Your Name" />
+          <form className='space-y-4' onSubmit={handleSend}>
+            <div className='space-y-1'>
+              <Input name='name' placeholder='Your Name' type='text' />
               {state?.errors?.name && (
-                <p className="text-destructive text-xs">{state.errors.name}</p>
+                <p className='text-destructive text-xs'>{state.errors.name}</p>
               )}
             </div>
-            <div className="space-y-1">
+            <div className='space-y-1'>
               <Input
-                type="email"
-                name="email"
-                placeholder="your.name@domain.com"
+                name='email'
+                placeholder='your.name@domain.com'
+                type='email'
               />
               {state?.errors?.email && (
-                <p className="text-destructive text-xs">{state.errors.email}</p>
+                <p className='text-destructive text-xs'>{state.errors.email}</p>
               )}
             </div>
-            <div className="space-y-1">
-              <Textarea name="message" placeholder="Your message..." />
+            <div className='space-y-1'>
+              <Textarea name='message' placeholder='Your message...' />
               {state?.errors?.message && (
-                <p className="text-destructive text-xs">
+                <p className='text-destructive text-xs'>
                   {state.errors.message}
                 </p>
               )}
             </div>
-            <Button className="w-full">Send</Button>
+            <Button className='w-full'>Send</Button>
           </form>
         </main>
       </section>
