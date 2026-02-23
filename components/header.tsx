@@ -5,9 +5,8 @@ import { useRouter } from 'next/navigation';
 
 import MenuToggle from '@/components/menu-toggle';
 import ThemeToggle from '@/components/theme-toggle';
-import data from '@/data.json';
 
-export default function Header() {
+export default function Header({ resume }: { resume: string }) {
   const router = useRouter();
 
   return (
@@ -29,7 +28,7 @@ export default function Header() {
             <Link href='/contact'>Contact</Link>
           </li>
           <li className='hover:text-foreground text-muted-foreground transition-colors'>
-            <a href={data.social.resume}>Resume</a>
+            <a href={resume}>Resume</a>
           </li>
         </ul>
         <ThemeToggle />

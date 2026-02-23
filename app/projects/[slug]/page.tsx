@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+import Footer from '@/components/footer';
+import Header from '@/components/header';
 import data from '@/data.json';
 import { formatDate } from '@/lib/utils';
 
@@ -14,7 +16,7 @@ export function generateStaticParams() {
 }
 
 export default async function Page({ params }: Props) {
-  const {slug} = await params;
+  const { slug } = await params;
   const post = data.projects.find(post => post.slug === slug);
 
   if (!post) notFound();
@@ -24,37 +26,46 @@ export default async function Page({ params }: Props) {
   );
 
   return (
-    <main className='px-8'>
-      <section className='container mx-auto max-w-3xl space-y-4'>
-        <header className='space-y-2'>
-          <Link
-            className='text-muted-foreground hover:text-foreground flex gap-2 text-sm font-light transition-colors'
-            href='/projects'>
-            <ArrowLeftIcon className='h-5 w-5' />
-            <span>Back to projects</span>
-          </Link>
-          <div className='relative h-80'>
-            <Image
-              alt='Post Image'
-              className='aspect-video rounded-lg'
-              fill
-              priority
-              src={post.image}
-            />
-          </div>
-        </header>
-        <main className='space-y-4'>
-          <h1 className='decoration-border/75 font-serif text-3xl font-bold underline decoration-2 underline-offset-8'>
-            {post.title}
-          </h1>
-          <p className='text-muted-foreground text-xs'>
-            {post.author} / {formatDate(post.publishedAt)}
-          </p>
-        </main>
-        <footer className='prose dark:prose-invert max-w-none'>
-          <MDXRemote source={await result.text()} />
-        </footer>
-      </section>
-    </main>
+    <>
+      <Header resume={data.social.resume} />
+      <main className='container mx-auto max-w-3xl grow px-8'>
+        <section className='space-y-4'>
+          <header className='space-y-2'>
+            <Link
+              className='text-muted-foreground hover:text-foreground flex gap-2 text-sm font-light transition-colors'
+              href='/projects'>
+              <ArrowLeftIcon className='h-5 w-5' />
+              <span>Back to projects</span>
+            </Link>
+            <div className='relative h-80'>
+              <Image
+                alt='Post Image'
+                className='aspect-video rounded-lg'
+                fill
+                priority
+                src={post.image}
+              />
+            </div>
+          </header>
+          <main className='space-y-4'>
+            <h1 className='decoration-border/75 font-serif text-3xl font-bold underline decoration-2 underline-offset-8'>
+              {post.title}
+            </h1>
+            <p className='text-muted-foreground text-xs'>
+              {post.author} / {formatDate(post.publishedAt)}
+            </p>
+          </main>
+          <footer className='prose dark:prose-invert max-w-none'>
+            <MDXRemote source={await result.text()} />
+          </footer>
+        </section>
+      </main>
+      <Footer
+        email={data.social.email}
+        gitHub={data.social.gitHub}
+        linkedIn={data.social.linkedIn}
+        whatsApp={data.social.whatsApp}
+      />
+    </>
   );
 }

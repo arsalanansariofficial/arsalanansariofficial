@@ -2,16 +2,19 @@ import * as Brands from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import data from '@/data.json';
-
-export default function Footer() {
+export default function Footer(props: {
+  email: string;
+  gitHub: string;
+  linkedIn: string;
+  whatsApp: string;
+}) {
   return (
     <footer className='container mx-auto max-w-3xl space-y-4 p-8 sm:flex sm:items-center sm:justify-between sm:gap-2 sm:space-y-0'>
       <ul className='mx-auto flex max-w-fit gap-2 sm:order-1 sm:mx-0 sm:max-w-none'>
         <li className='h-4 w-4'>
           <a
             className='text-muted-foreground hover:text-foreground'
-            href={data.social.email}
+            href={props.email}
             target='_blank'
             title='Email'>
             <FontAwesomeIcon icon={faEnvelope} size='sm' />
@@ -20,7 +23,7 @@ export default function Footer() {
         <li className='h-4 w-4'>
           <a
             className='text-muted-foreground hover:text-foreground'
-            href={data.social.gitHub}
+            href={props.gitHub}
             target='_blank'
             title='GitHub'>
             <FontAwesomeIcon icon={Brands.faGithub} size='sm' />
@@ -29,7 +32,7 @@ export default function Footer() {
         <li className='h-4 w-4'>
           <a
             className='text-muted-foreground hover:text-foreground'
-            href={data.social.linkedIn}
+            href={props.linkedIn}
             target='_blank'
             title='LinkedIn'>
             <FontAwesomeIcon icon={Brands.faLinkedin} size='sm' />
@@ -38,7 +41,7 @@ export default function Footer() {
         <li className='h-4 w-4'>
           <a
             className='text-muted-foreground hover:text-foreground'
-            href={data.social.whatApp}
+            href={props.whatsApp}
             target='_blank'
             title='WhatsApp'>
             <FontAwesomeIcon icon={Brands.faWhatsapp} size='sm' />
