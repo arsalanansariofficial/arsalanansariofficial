@@ -1,6 +1,6 @@
 ### 👋 Hi, I'm Arsalan Ansari!
 
-I'm a Fullstack Developer specializing in **Next.JS** to build fast, responsive, and scalable user interfaces.
+Full Stack Developer crafting end-to-end web solutions with TypeScript. Focused on building clean, performant interfaces using React.js and Tailwind CSS.
 
 ### 🚀 What I Do
 
