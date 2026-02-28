@@ -186,6 +186,7 @@ const eslintConfig = [
       'prefer-spread': 'error',
       'prefer-template': 'error',
       'react-hooks/incompatible-library': 'off',
+      'react/no-children-prop': 'off',
       'require-atomic-updates': 'error',
       'sort-vars': 'error',
       'use-isnan': 'error',
