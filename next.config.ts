@@ -11,6 +11,5 @@ export default {
       }
     ],
     unoptimized: true
-  },
-  output: 'export'
+  }
 } as NextConfig;
