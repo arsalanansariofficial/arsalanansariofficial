@@ -1,20 +1,49 @@
+'use client';
+
+import { useQuery } from '@tanstack/react-query';
 import Image from 'next/image';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import Posts from '@/components/posts';
 import Projects from '@/components/projects';
-import data from '@/data.json';
+import { repositoryURL } from '@/lib/constants';
+import { ApiError, Response } from '@/lib/types';
 
 export default function Home() {
+  const { data, error, isFetching } = useQuery<Response, ApiError>({
+    async queryFn() {
+      try {
+        const response = await fetch(`${repositoryURL}/blog/author.json`);
+
+        if (!response.ok)
+          throw new ApiError(response.status, response.statusText);
+
+        return await response.json();
+      } catch (error: unknown) {
+        throw new ApiError(500, (error as Error).message);
+      }
+    },
+    queryKey: ['data']
+  });
+
+  if (error && error.status === 404) notFound();
+  if (error) throw new Error(error.message);
+
+  if (isFetching)
+    return <span className='m-auto font-serif text-xl'>Loading...</span>;
+
+  if (!data) return;
+
   const posts = data.posts.slice(0, 3);
   const projects = data.projects.slice(0, 5);
 
   return (
     <>
       <Header resume={data.social.resume} />
-      <main className='container mx-auto max-w-3xl grow space-y-8 px-8'>
+      <main className='relative top-24 container mx-auto max-w-3xl grow space-y-8 px-8'>
         <section className='gap-8 space-y-8 sm:flex sm:items-center sm:space-y-0'>
           <Image
             alt='Arsalan Ansari'

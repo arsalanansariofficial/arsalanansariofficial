@@ -1,34 +1,39 @@
+'use client';
+
 import { ArrowLeftIcon } from 'lucide-react';
-import { MDXRemote } from 'next-mdx-remote/rsc';
 import Image from 'next/image';
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { useParams } from 'next/navigation';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
+import remarkGfm from 'remark-gfm';
 
 import Footer from '@/components/footer';
 import Header from '@/components/header';
-import data from '@/data.json';
+import useSlug from '@/hooks/useSlug';
+import { repositoryURL } from '@/lib/constants';
 import { formatDate } from '@/lib/utils';
 
-type Props = { params: Promise<{ slug: string }> };
-
-export function generateStaticParams() {
-  return data.projects.map(post => ({ slug: post.slug }));
-}
-
-export default async function Page({ params }: Props) {
-  const { slug } = await params;
-  const post = data.projects.find(post => post.slug === slug);
-
-  if (!post) notFound();
-
-  const result = await fetch(
-    `https://raw.githubusercontent.com/arsalanansariofficial/resources/refs/heads/main/markdowns/projects/${slug}.md`
+export default function Page() {
+  const params = useParams();
+  const response = useSlug(
+    `${repositoryURL}/blog/author.json`,
+    `${repositoryURL}/markdowns/projects/${params.slug}.md`
   );
+
+  if (response.isFetching || response.isSlugFetching)
+    return <span className='m-auto font-serif text-xl'>Loading...</span>;
+
+  if (!response.data || !response.md) return;
+
+  const project = response.data.projects.find(
+    project => project.slug === params.slug
+  )!;
 
   return (
     <>
-      <Header resume={data.social.resume} />
-      <main className='container mx-auto max-w-3xl grow px-8'>
+      <Header resume={response.data.social.resume} />
+      <main className='relative top-24 container mx-auto max-w-3xl grow px-8'>
         <section className='space-y-4'>
           <header className='space-y-2'>
             <Link
@@ -39,32 +44,36 @@ export default async function Page({ params }: Props) {
             </Link>
             <div className='relative h-80'>
               <Image
-                alt='Post Image'
+                alt='Project Image'
                 className='aspect-video rounded-lg'
                 fill
                 priority
-                src={post.image}
+                src={project.image}
               />
             </div>
           </header>
           <main className='space-y-4'>
             <h1 className='decoration-border/75 font-serif text-3xl font-bold underline decoration-2 underline-offset-8'>
-              {post.title}
+              {project.title}
             </h1>
             <p className='text-muted-foreground text-xs'>
-              {post.author} / {formatDate(post.publishedAt)}
+              {project.author} / {formatDate(project.publishedAt)}
             </p>
           </main>
           <footer className='prose dark:prose-invert max-w-none'>
-            <MDXRemote source={await result.text()} />
+            <ReactMarkdown
+              children={response.md}
+              rehypePlugins={[rehypeRaw]}
+              remarkPlugins={[remarkGfm]}
+            />
           </footer>
         </section>
       </main>
       <Footer
-        email={data.social.email}
-        gitHub={data.social.gitHub}
-        linkedIn={data.social.linkedIn}
-        whatsApp={data.social.whatsApp}
+        email={response.data.social.email}
+        gitHub={response.data.social.gitHub}
+        linkedIn={response.data.social.linkedIn}
+        whatsApp={response.data.social.whatsApp}
       />
     </>
   );

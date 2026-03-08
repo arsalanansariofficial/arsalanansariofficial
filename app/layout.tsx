@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 
 import { Inter, Playfair_Display } from 'next/font/google';
 
+import QueryProvider from '@/components/query-provider';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Toaster } from '@/components/ui/sonner';
 import '@/app/globals.css';
+import { Toaster } from '@/components/ui/sonner';
 
 type Props = Readonly<{ children: React.ReactNode }>;
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
@@ -23,9 +24,9 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${playfair.variable} relative top-24 flex min-h-screen flex-col antialiased`}>
+        className={`${inter.variable} ${playfair.variable} flex min-h-screen flex-col antialiased`}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-          {children}
+          <QueryProvider>{children}</QueryProvider>
           <Toaster />
         </ThemeProvider>
       </body>

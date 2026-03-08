@@ -7,22 +7,26 @@ import Header from '@/components/header';
 import Projects from '@/components/projects';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import data from '@/data.json';
+import useData from '@/hooks/useData';
+import { repositoryURL } from '@/lib/constants';
 
 export default function Page() {
-  let filteredProjects = data.projects;
   const [filter, setFilter] = useState<string>(String());
+  const response = useData(
+    `${repositoryURL}/blog/author.json`,
+    filter,
+    'project'
+  );
 
-  if (filter)
-    filteredProjects = data.projects.filter(post => {
-      const searchValue = filter.toLocaleLowerCase();
-      return post.title.toLocaleLowerCase().includes(searchValue);
-    });
+  if (response.isFetching)
+    return <span className='m-auto font-serif text-xl'>Loading...</span>;
+
+  if (!response.data) return;
 
   return (
     <>
-      <Header resume={data.social.resume} />
-      <main className='container mx-auto max-w-3xl grow px-8'>
+      <Header resume={response.data.social.resume} />
+      <main className='relative top-24 container mx-auto max-w-3xl grow px-8'>
         <section className='space-y-4'>
           <header className='space-y-4'>
             <h1 className='decoration-border/75 font-serif text-3xl font-bold underline decoration-2 underline-offset-8'>
@@ -43,15 +47,15 @@ export default function Page() {
             </div>
           </header>
           <main>
-            <Projects projects={filteredProjects} />
+            <Projects projects={response.filteredData} />
           </main>
         </section>
       </main>
       <Footer
-        email={data.social.email}
-        gitHub={data.social.gitHub}
-        linkedIn={data.social.linkedIn}
-        whatsApp={data.social.whatsApp}
+        email={response.data.social.email}
+        gitHub={response.data.social.gitHub}
+        linkedIn={response.data.social.linkedIn}
+        whatsApp={response.data.social.whatsApp}
       />
     </>
   );

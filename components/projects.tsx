@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { memo } from 'react';
 
 import { formatDate } from '@/lib/utils';
 
@@ -14,7 +15,7 @@ type Props = {
   }[];
 };
 
-export default function Projects({ projects }: Props) {
+function Projects({ projects }: Props) {
   return (
     <ul className='grid gap-8 sm:grid-cols-2'>
       {projects.map(project => (
@@ -44,3 +45,5 @@ export default function Projects({ projects }: Props) {
     </ul>
   );
 }
+
+export default memo(Projects);

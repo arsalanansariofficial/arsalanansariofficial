@@ -1,5 +1,7 @@
 'use client';
 
+import { useQuery } from '@tanstack/react-query';
+import { notFound } from 'next/navigation';
 import { SubmitEvent, useState } from 'react';
 import { toast } from 'sonner';
 import { z } from 'zod';
@@ -9,7 +11,8 @@ import Header from '@/components/header';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import data from '@/data.json';
+import { repositoryURL } from '@/lib/constants';
+import { Response, ApiError } from '@/lib/types';
 
 const schema = z.object({
   email: z.string().email({ message: 'Enter a valid email.' }),
@@ -21,6 +24,30 @@ export default function Page() {
   const [state, setState] = useState<{
     errors: { name?: string[]; email?: string[]; message?: string[] };
   } | null>(null);
+
+  const { data, error, isFetching } = useQuery<Response, ApiError>({
+    async queryFn() {
+      try {
+        const response = await fetch(`${repositoryURL}/blog/author.json`);
+
+        if (!response.ok)
+          throw new ApiError(response.status, response.statusText);
+
+        return await response.json();
+      } catch (error: unknown) {
+        throw new ApiError(500, (error as Error).message);
+      }
+    },
+    queryKey: ['data']
+  });
+
+  if (error && error.status === 404) notFound();
+  if (error) throw new Error(error.message);
+
+  if (isFetching)
+    return <span className='m-auto font-serif text-xl'>Loading...</span>;
+
+  if (!data) return;
 
   function handleSend(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -42,7 +69,7 @@ export default function Page() {
   return (
     <>
       <Header resume={data.social.resume} />
-      <main className='container mx-auto max-w-3xl grow px-8'>
+      <main className='relative top-24 container mx-auto max-w-3xl grow px-8'>
         <section className='space-y-8'>
           <header className='space-y-8'>
             <h1 className='decoration-border/75 font-serif text-3xl font-bold underline decoration-2 underline-offset-8'>
