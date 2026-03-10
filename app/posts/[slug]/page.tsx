@@ -1,77 +1,13 @@
-'use client';
-
-import { ArrowLeftIcon } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useParams } from 'next/navigation';
-import ReactMarkdown from 'react-markdown';
-import rehypeRaw from 'rehype-raw';
-import remarkGfm from 'remark-gfm';
-
-import Footer from '@/components/footer';
-import Header from '@/components/header';
-import useSlug from '@/hooks/useSlug';
+import Component from '@/app/posts/[slug]/component';
 import { repositoryURL } from '@/lib/constants';
-import { formatDate } from '@/lib/utils';
+import { Response } from '@/lib/types';
+
+export async function generateStaticParams() {
+  const response = await fetch(`${repositoryURL}/blog/author.json`);
+  const data = (await response.json()) as Response;
+  return data.posts.map(post => ({ slug: post.slug }));
+}
 
 export default function Page() {
-  const params = useParams();
-  const response = useSlug(
-    `${repositoryURL}/blog/author.json`,
-    `${repositoryURL}/markdowns/posts/${params.slug}.md`
-  );
-
-  if (response.isFetching || response.isSlugFetching)
-    return <span className='m-auto font-serif text-xl'>Loading...</span>;
-
-  if (!response.data || !response.md) return;
-  const post = response.data.posts.find(post => post.slug === params.slug)!;
-
-  return (
-    <>
-      <Header resume={response.data.social.resume} />
-      <main className='relative top-24 container mx-auto max-w-3xl grow px-8'>
-        <section className='space-y-4'>
-          <header className='space-y-2'>
-            <Link
-              className='text-muted-foreground hover:text-foreground flex gap-2 text-sm font-light transition-colors'
-              href='/posts'>
-              <ArrowLeftIcon className='h-5 w-5' />
-              <span>Back to posts</span>
-            </Link>
-            <div className='relative h-80'>
-              <Image
-                alt='Post Image'
-                className='aspect-video rounded-lg'
-                fill
-                priority
-                src={post.image}
-              />
-            </div>
-          </header>
-          <main className='space-y-4'>
-            <h1 className='decoration-border/75 font-serif text-3xl font-bold underline decoration-2 underline-offset-8'>
-              {post.title}
-            </h1>
-            <p className='text-muted-foreground text-xs'>
-              {post.author} / {formatDate(post.publishedAt)}
-            </p>
-          </main>
-          <footer className='prose dark:prose-invert max-w-none'>
-            <ReactMarkdown
-              children={response.md}
-              rehypePlugins={[rehypeRaw]}
-              remarkPlugins={[remarkGfm]}
-            />
-          </footer>
-        </section>
-      </main>
-      <Footer
-        email={response.data.social.email}
-        gitHub={response.data.social.gitHub}
-        linkedIn={response.data.social.linkedIn}
-        whatsApp={response.data.social.whatsApp}
-      />
-    </>
-  );
+  return <Component />;
 }
